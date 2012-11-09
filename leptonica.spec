@@ -1,11 +1,11 @@
 Summary:	Image processing and analysis library
 Name:		leptonica
-Version:	1.68
-Release:	2
+Version:	1.69
+Release:	1
 License:	BSD-like
 Group:		Libraries
 Source0:	http://leptonica.googlecode.com/files/%{name}-%{version}.tar.gz
-# Source0-md5:	5cd7092f9ff2ca7e3f3e73bfcd556403
+# Source0-md5:	274c921dcc47a97637ecc49c9e4a7b50
 Patch0:		%{name}-zlib-include.patch
 URL:		http://www.leptonica.com/
 BuildRequires:	autoconf
