@@ -1,12 +1,13 @@
 Summary:	Image processing and analysis library
 Name:		leptonica
 Version:	1.69
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Libraries
 Source0:	http://leptonica.googlecode.com/files/%{name}-%{version}.tar.gz
 # Source0-md5:	274c921dcc47a97637ecc49c9e4a7b50
 Patch0:		%{name}-zlib-include.patch
+Patch1:		%{name}-giflib.patch
 URL:		http://www.leptonica.com/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -32,6 +33,7 @@ Header files for leptonica library.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__libtoolize}
