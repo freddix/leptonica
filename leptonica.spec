@@ -1,7 +1,7 @@
 Summary:	Image processing and analysis library
 Name:		leptonica
 Version:	1.69
-Release:	2
+Release:	3
 License:	BSD-like
 Group:		Libraries
 Source0:	http://leptonica.googlecode.com/files/%{name}-%{version}.tar.gz
@@ -16,6 +16,7 @@ BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libtiff-devel
 BuildRequires:	libtool
+BuildRequires:	libwebp-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
